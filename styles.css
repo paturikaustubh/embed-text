@@ -45,19 +45,19 @@ h1 {
   bottom: 5%;
   right: 5%;
   font-family: "Archivo Black";
-  font-size: 6rem;
+  font-size: 8vw;
   pointer-events: none; /* Ensure text does not interfere with image interactions */
   letter-spacing: 0.08em;
 }
 
 .embed-text-outline {
   color: transparent;
-  -webkit-text-stroke: 3px white; /* Adjust stroke width if needed */
+  -webkit-text-stroke: 2px white; /* Adjust stroke width if needed */
   z-index: 1;
 }
 
 .embed-text-outline.dark {
-  -webkit-text-stroke: 3px black; /* Adjust stroke width if needed */
+  -webkit-text-stroke: 2px black; /* Adjust stroke width if needed */
 }
 
 .embed-text-bg {
