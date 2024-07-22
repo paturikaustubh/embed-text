@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+
+    <title>Text Embedding</title>
+  </head>
+  <body>
+    <main>
+      <h1>Embed Text</h1>
+      <section class="inputs-container">
+        <input type="file" id="file-input" accept=".png, .jpg, .jpeg" />
+        <select name="text-theme" id="text-theme">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+        <input type="text" id="img-text" value="MOVIES 4 YOU" />
+      </section>
+      <div class="img-container" id="capture">
+        <img id="image-display" src="" alt="" class="embedded-image" />
+        <span id="img-text-outline" class="embed-text-outline"
+          >MOVIES 4 YOU</span
+        >
+        <span id="img-text-bg" class="embed-text-bg">MOVIES 4 YOU</span>
+      </div>
+
+      <div class="">
+        <button id="download">Download</button>
+      </div>
+    </main>
+  </body>
+</html>

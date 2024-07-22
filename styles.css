@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+body {
+  margin: 0;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.inputs-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-block: 1.5rem;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  max-width: 90dvw;
+  margin: auto;
+  overflow: hidden; /* Prevent overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container .embedded-image {
+  display: block; /* Remove any extra space below the image */
+  width: 100%; /* Fit the container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.img-container .embed-text-bg,
+.img-container .embed-text-outline {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  font-family: "Archivo Black";
+  font-size: 6rem;
+  pointer-events: none; /* Ensure text does not interfere with image interactions */
+  letter-spacing: 0.08em;
+}
+
+.embed-text-outline {
+  color: transparent;
+  -webkit-text-stroke: 3px white; /* Adjust stroke width if needed */
+  z-index: 1;
+}
+
+.embed-text-outline.dark {
+  -webkit-text-stroke: 3px black; /* Adjust stroke width if needed */
+}
+
+.embed-text-bg {
+  color: rgba(128, 128, 128, 0.5);
+  z-index: 0;
+}
+
+.embed-text-bg.dark {
+  color: rgba(32, 32, 32, 0.5);
+}
+
+#download {
+  margin: 20px auto;
+  display: block;
+}
